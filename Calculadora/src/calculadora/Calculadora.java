@@ -11,6 +11,8 @@ package calculadora;
  */
 public class Calculadora {
     
+    
+    
        
     
     /**
@@ -21,6 +23,7 @@ public class Calculadora {
         
         int a;
         int b;
+        char operador;
         
         Scanner lector = new Scanner (System.in);
         System.out.println("Ingrese un numero: ");
@@ -28,8 +31,7 @@ public class Calculadora {
         
         System.out.println("Ingrese otro numero: ");
         b = lector.nextInt();
-        
-        
+                
     }
     
 }
