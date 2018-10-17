@@ -5,33 +5,40 @@
  */
 package calculadora;
 
+import static calculadora.Calcu.*;
+
 /**
  *
  * @author capacita_mecon
  */
 public class Calculadora {
-    
-    
-    
-       
-    
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        int a;
-        int b;
+
+        float a;
+        float b;
         char operador;
+
+        a = getNumber();
+        b = getNumber();
+
+        operador = getOperador();
+        setOperador(operador);
+        /*int a;
+        int b;
+       // char operador;
         
         Scanner lector = new Scanner (System.in);
         System.out.println("Ingrese un numero: ");
         a = lector.nextInt();
         
         System.out.println("Ingrese otro numero: ");
-        b = lector.nextInt();
-                
+        b = lector.nextInt();*/
+
     }
-    
+
 }
