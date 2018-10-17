@@ -26,8 +26,17 @@ public class Calculadora {
         a = getNumber();
         b = getNumber();
 
+        /*//sumar(a,b);
+        System.out.println("La suma es: "+sumar(a,b));
+        //restar(a,b);
+        System.out.println("La resta es: "+restar(a,b));
+        //multiplicar(a,b);
+        System.out.println("La multiplicacion es: "+multiplicar(a,b));
+        //dividir(a,b);
+        System.out.println("La division es: "+dividir(a,b));*/
+        
         operador = getOperador();
-        setOperador(operador);
+        setOperador(operador,a,b);
         /*int a;
         int b;
        // char operador;

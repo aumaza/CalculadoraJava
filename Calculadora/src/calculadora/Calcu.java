@@ -31,23 +31,29 @@ public class Calcu {
         
     }
     
-    public static void sumar(float a, float b)
+    public static float sumar(float a, float b)
     {
           
         Resultado = a + b;
+        
+        return Resultado;
     }
     
-    public static void restar(float a, float b)
+    public static float restar(float a, float b)
     {
         Resultado = a - b;
+        
+        return Resultado;
     }
     
-    public static void multiplicar (float a, float b)
+    public static float multiplicar (float a, float b)
     {
         Resultado = a * b;
+        
+        return Resultado;
     }
     
-    public static void dividir(float a, float b)
+    public static float dividir(float a, float b)
     {
         if(b == 0)
         {
@@ -58,6 +64,8 @@ public class Calcu {
         {
             Resultado = a / b;
         }
+        
+        return Resultado;
     }
     
        
@@ -73,28 +81,28 @@ public class Calcu {
     }
     
     
-    public static void setOperador(char operador){
+    public static void setOperador(char operador, float a, float b){
         
         switch(operador)
         {
             case 1: if(operador == '+')
             {
                 //sumar(a,b);
-                System.out.println("La suma es: "+Resultado);
+                System.out.println("La suma es: "+sumar(a,b));
             }
             break;
             
             case 2: if(operador == '-')
             {
                 //restar(a,b);
-                System.out.println("La resta es: "+Resultado);
+                System.out.println("La resta es: "+restar(a,b));
             }
             break;
             
             case 3: if(operador == '*')
             {
                 //multiplicar(a,b);
-                System.out.println("La multiplicacion es: "+Resultado);
+                System.out.println("La multiplicacion es: "+multiplicar(a,b));
             }
             break;
             
@@ -102,7 +110,7 @@ public class Calcu {
             {
                 
                 //dividir(a,b);
-                System.out.println("La division es: "+Resultado);
+                System.out.println("La division es: "+dividir(a,b));
             }
             break;
         }
